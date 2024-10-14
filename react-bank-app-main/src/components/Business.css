@@ -1,0 +1,118 @@
+.business-section {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+  padding: 40px 0;
+}
+
+@media (min-width: 640px) {
+  .business-section {
+    padding: 64px 0;
+  }
+}
+
+.business-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+@media (min-width: 1060px) {
+  .business-container {
+    flex-direction: row;
+    gap: 64px;
+  }
+}
+
+.business-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+}
+
+.business-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+@media (min-width: 1060px) {
+  .business-description {
+    font-size: 18px;
+  }
+}
+
+.business-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.business-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+@media (min-width: 620px) {
+  .business-card {
+    padding: 28px;
+    gap: 20px;
+  }
+}
+
+.business-card:hover {
+  background: var(--black-gradient);
+}
+
+.business-card-icon {
+  padding: 16px;
+  background: rgba(9, 151, 124, 0.1);
+  border-radius: 50%;
+}
+
+.business-card-icon-inner {
+  font-size: 24px;
+  color: #00f6ff;
+}
+
+@media (min-width: 620px) {
+  .business-card-icon-inner {
+    font-size: 32px;
+  }
+}
+
+.business-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.business-card-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .business-card-title {
+    font-size: 18px;
+  }
+}
+
+.business-card-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+@media (min-width: 640px) {
+  .business-card-desc {
+    font-size: 16px;
+  }
+}

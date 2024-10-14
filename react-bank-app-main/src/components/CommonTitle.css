@@ -1,0 +1,21 @@
+.common-title {
+  font-size: 48px; /* Default size equivalent to text-3xl */
+  font-weight: 600; /* font-semibold */
+  line-height: 2.25; /* Leading normal */
+}
+
+@media (min-width: 620px) {
+  /* Equivalent to ss breakpoint */
+  .common-title {
+    font-size: 48px; /* Equivalent to text-4xl */
+    line-height: 1.5; /* sm:leading-relaxed */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Equivalent to md breakpoint */
+  .common-title {
+    font-size: 48px; /* Equivalent to text-5xl */
+    line-height: 1.5; /* md:leading-relaxed */
+  }
+}
