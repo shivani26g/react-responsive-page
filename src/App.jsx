@@ -8,24 +8,45 @@ import ScrollTop from "./components/ScrollTop";
 import ServiceCard from "./components/ServiceCard";
 import Stats from "./components/Stats";
 import Testimonials from "./components/Testimonials";
+import "./App.css"; // Import the CSS file
 
 const App = () => {
   return (
-    <div className="bg-primary text-white w-full h-full">
+    <div className="app-container">
+      {/* Navbar */}
       <Navbar />
+
+      {/* Scroll to top button */}
       <ScrollTop />
-      <div className="container px-5 md:px-10 mx-auto">
+
+      {/* Main Content */}
+      <div className="content-container">
+        {/* Hero Section */}
         <Hero />
-        <div className="flex flex-col xs:flex-row flex-wrap items-center justify-between gap-6 md:gap-2 py-20">
+
+        {/* Stats Section */}
+        <div className="stats-section">
           <Stats number="3800" title="ACTIVE USER" />
           <Stats number="230" title="TRUSTED BY COMPANY" />
           <Stats number="$230M" title="TRANSACTION" />
         </div>
+
+        {/* Business Section */}
         <Business />
+
+        {/* Billing Section */}
         <Bill />
+
+        {/* Payment Method Section */}
         <PaymentMethod />
+
+        {/* Testimonials Section */}
         <Testimonials />
+
+        {/* Service Card Section */}
         <ServiceCard />
+
+        {/* Footer Section */}
         <Footer />
       </div>
     </div>

@@ -1,0 +1,67 @@
+/* General Variables - This simulates your Tailwind config */
+:root {
+  --primary-color: #00040f;
+  --secondary-color: #00f6ff;
+  --dim-white: rgba(255, 255, 255, 0.7);
+  --dim-blue: rgba(9, 151, 124, 0.1);
+}
+
+/* Font settings */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* General App Layout */
+.app-container {
+  background-color: var(--primary-color); /* Apply the primary background color */
+  color: white; /* Default text color */
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 80px 0;
+}
+
+@media (min-width: 576px) {
+  .stats-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+/* Button styling (example for the CommonButton component) */
+.button {
+  background-color: var(--secondary-color); /* Apply secondary color */
+  color: var(--primary-color); /* Make text color the primary color */
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}

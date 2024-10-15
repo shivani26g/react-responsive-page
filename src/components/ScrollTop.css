@@ -1,0 +1,49 @@
+/* Scroll Container */
+.scroll-container {
+  overflow: hidden;
+}
+
+/* Scroll Button */
+.scroll-button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: -100%;
+  z-index: 30;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.375rem; /* Rounded corners */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Shadow */
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .scroll-button {
+    bottom: 2.5rem;
+  }
+}
+
+/* Change button style on hover and active state */
+.scroll-button:hover {
+  background-color: #cdcdcd;
+}
+
+.scroll-button:active {
+  padding: 0.45rem;
+}
+
+/* Arrow Icon */
+.arrow-icon {
+  font-size: 1.25rem;
+  color: black;
+  transition: font-size 0.2s ease;
+}
+
+.scroll-button:active .arrow-icon {
+  font-size: 1rem;
+}
+
+/* Visible state when scrolling past a certain point */
+.visible {
+  right: 2.5rem;
+}

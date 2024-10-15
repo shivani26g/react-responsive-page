@@ -3,27 +3,27 @@ import { IoLogoDropbox, IoLogoPlaystation } from "react-icons/io";
 import { TbBrandMeta, TbBrandHbo } from "react-icons/tb";
 import CommonTitle from "./CommonTitle";
 import CommonButton from "./CommonButton";
+import "./ServiceCard.css";
 
 const ServiceCard = () => {
   return (
-    <section className="font-poppins md:py-16 py-10">
-      <div className="flex flex-col gap-10">
-        <div className="brands-logo flex items-center sm:flex-nowrap flex-wrap w-full gap-10 text-6xl xs:text-7xl ss:text-8xl justify-center sm:text-[130px] text-[#5f5f5fb8] cursor-pointer">
-          <BiLogoEbay className="hover:text-white" />
-          <TbBrandHbo className="hover:text-white" />
-          <BiLogoVisa className="hover:text-white" />
-          <TbBrandMeta className="hover:text-white" />
-          <BiLogoWix className="hover:text-white" />
-          <IoLogoDropbox className="hover:text-white" />
-          <IoLogoPlaystation className="hover:text-white" />
+    <section className="service-card-section">
+      <div className="service-card-content">
+        <div className="brands-logo">
+          <BiLogoEbay className="brand-icon" />
+          <TbBrandHbo className="brand-icon" />
+          <BiLogoVisa className="brand-icon" />
+          <TbBrandMeta className="brand-icon" />
+          <BiLogoWix className="brand-icon" />
+          <IoLogoDropbox className="brand-icon" />
+          <IoLogoPlaystation className="brand-icon" />
         </div>
 
-        <div className="flex sm:flex-row flex-col sm:gap-0 gap-10 sm:items-center justify-between w-full bg-black-gradient-2 rounded-3xl p-6 ss:px-10 ss:py-10 md:px-16 md:py-7 my-10 md:my-16">
+        <div className="service-info">
           <div>
             <CommonTitle title="Let's try our service now!" />
-            <p className="max-w-[470px] mt-4 sm:mt-8">
-              Everything you need to accept card payments and grow your business
-              anywhere on the planet. Get Started
+            <p className="service-description">
+              Everything you need to accept card payments and grow your business anywhere on the planet. Get Started
             </p>
           </div>
           <div>

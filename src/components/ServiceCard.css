@@ -1,0 +1,75 @@
+/* Service Card Section */
+.service-card-section {
+  font-family: "Poppins", sans-serif;
+  padding: 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .service-card-section {
+    padding: 4rem 0;
+  }
+}
+
+/* Service Card Content */
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Brands Logo Container */
+.brands-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 4rem;
+  color: #5f5f5fb8;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .brands-logo {
+    flex-wrap: nowrap;
+    font-size: 8rem;
+  }
+}
+
+.brand-icon {
+  transition: color 0.3s ease;
+}
+
+.brand-icon:hover {
+  color: white;
+}
+
+/* Service Info Container */
+.service-info {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgba(9, 9, 121, 0.8), rgba(0, 212, 255, 0.7));
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .service-info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3.75rem;
+    gap: 0;
+  }
+}
+
+/* Service Description */
+.service-description {
+  max-width: 470px;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .service-description {
+    margin-top: 2rem;
+  }
+}

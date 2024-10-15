@@ -1,0 +1,84 @@
+/* Container */
+.payment-method-container {
+  padding: 2.5rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 640px) {
+  .payment-method-container {
+    padding: 4rem 0;
+  }
+}
+
+/* Content Layout */
+.payment-method-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .payment-method-content {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+
+/* Information Section */
+.payment-method-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .payment-method-info {
+    gap: 2.5rem;
+  }
+}
+
+/* Steps Container */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Steps Text */
+.steps-text {
+  font-size: 0.875rem;
+  color: var(--dim-white); /* Define your dim white color in CSS variables */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .steps-text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .steps-text {
+    font-size: 1.125rem;
+  }
+}
+
+/* Steps Icon */
+.steps-icon {
+  color: var(--secondary-color); /* Define your secondary color in CSS variables */
+  font-size: 1rem;
+  margin-top: -0.25rem;
+}
+
+/* Image Section */
+.payment-method-image {
+  flex: 1;
+}
+
+.payment-method-image .image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

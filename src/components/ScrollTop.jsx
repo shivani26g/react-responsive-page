@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { BsArrowUp } from "react-icons/bs";
+import "./ScrollTop.css";
 
 const ScrollTop = () => {
   const arrow = useRef();
@@ -7,9 +8,9 @@ const ScrollTop = () => {
   useEffect(() => {
     window.onscroll = () => {
       if (window.pageYOffset >= 180) {
-        arrow.current.classList.add("right-10");
+        arrow.current.classList.add("visible");
       } else {
-        arrow.current.classList.remove("right-10");
+        arrow.current.classList.remove("visible");
       }
     };
   }, []);
@@ -22,14 +23,9 @@ const ScrollTop = () => {
   };
 
   return (
-    <div className="overflow-hidden">
-      <button
-        aria-label="arrow"
-        className={`fixed bottom-6 ss:bottom-10 z-30 -right-full transition-all duration-500 shadow-2xl shadow-black bg-white hover:bg-[#cdcdcd] active:p-[.45rem] p-2 rounded`}
-        onClick={scrollToTop}
-        ref={arrow}
-      >
-        <BsArrowUp className="text-xl active:text-lg text-black" />
+    <div className="scroll-container">
+      <button aria-label="arrow" className="scroll-button" onClick={scrollToTop} ref={arrow}>
+        <BsArrowUp className="arrow-icon" />
       </button>
     </div>
   );
